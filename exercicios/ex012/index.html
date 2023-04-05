@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+    <title>Imagens / Áudio / Vídeo</title>
+</head>
+<body>
+    <h1>Começando com imagens</h1>
+    <h2>Adequando as imagens de acordo o dispositivo</h2>
+    <p>Vamos adequar o site para que ele funcione em todos os tipos de dispositio de acesso a internet.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagens flexiveis">
+    </picture>
+    <h2>Colocando áudio no site</h2>
+    <p>Vamos colocar áudio no site.</p>
+    <audio controls autoplay>
+        <source src="audio/happy-mistake.mp3" type="audio/mpeg">
+    </audio>
+    <h2>Colocando vídeo no site</h2>
+    <p>Vamos colocar vídeo no site, utilizando duas formas diferentes, uma que cara para manter e outras que é muito barato.</p>
+    <video width="560" poster="imagens/limoes-capa.png" controls autoplay>
+        <source src="videos/meu-video.mp4" type="video/mp4">
+        <source src="videos/meu-video.m4v" type="video/m4v">
+        <source src="videos/meu-video.ogv" type="video/ogv">
+        <source src="videos/meu-video.webm" type="video/webm">
+    </video>
+    <p>Agora vamos colocar a forma mais barata, mais econômica e fácil.</p>
+    <p>Vamos usar o YouTube para que possamos colocar videos em nosso site sem gastar com hospedagem.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/W7TMEw0ybfM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <p>Para acessar o canal do Pedro Tinello, acesse o link abaixo.</p>
+    <a href="https://www.youtube.com/@pedrotinello" target="_blank"><ul type="square"><li>Canal do Pedro Tinello</li></ul></a>
+
+
+    <h2>O que nós fizemos</h2>
+    <ul type="square">
+        <li>Adapitamos nosso site para todos os dispositivos</li>
+        <li>Colocamos áudio em nosso site.</li>
+        <li>Colocamos vídeo em nosso site.</li>
+        <li>Mudamos a cor de fundo do nosso site como o CSS.</li>
+    </ul>
+    
+    
+</body>
+</html>

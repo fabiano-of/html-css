@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    padding: 20px;
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+
+a {
+   text-decoration: none; 
+   color: black;
+}
+
+.conteudo {
+    display: flex;
+    height: 100vh;
+}
+
+#coluna1 {
+    flex: 1;
+    background-color: blue;
+    
+}
+
+#coluna2 {
+    flex: 2;
+    background-color: blueviolet;
+}
+
+#coluna3 {
+    flex: 1;
+    background-color: brown;
+}
+
+footer {
+    height: 70px;
+    background-color: aquamarine;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Link de referência</title>
+</head>
+<body>
+    <h1>Vamos aprender como usar a tag &lt;a&gt; e o atributo href.</h1>
+    <hr>
+    <h2>Utilizando o &lt;a href&gt;</h2>
+    <p>criando o primeiro link.</p>
+    <a href="https://youtube.com">Clink aqui para acessar o YouTube.</a>
+    <h2>Utilizando o &lt;hreflang&gt;</h2>
+    <p>Agora vamos criar um link com o hreflang que indica o principal idioma do site. </p>
+    <a href="https://www.walmart.com" hreflang="en">Site do Walmart (em inglês)</a>
+    <h2>Usando os atributos target.</h2>
+    <p>Vamos usar as 2 principais opções _blank e _self</p>
+    <!--Temos o seguintes atributos:
+    _blank = Vai abrir o link em uma noja janela branca
+    _self = Vai abrir o link na janela ou frame atual (padrão)_top = Vai desfazer todos os frames e abrir o destino no navegador completo
+    _parent = Similiar ao uso do _top em uma referência à janela mãe nome-do-frame nome do frame caso esteja usando frames, indicar o nome da janela a abrir. -->
+
+    <a href="https://mercadolivre.com.br" target="_self">Clique aqui para acessar o Mercado Livre. <mark>(Usando o _self mesma janela)</mark></a>
+    <br>
+    <a href="https://ebay.com" hreflang="en" target="_blank">Clique aqui para acessar o Ebay. <mark>(Usando o _blank em outra janela)</mark></a>
+    <h2>O atributo rel indica qual é a natureza do destino dos links.</h2>
+    <p>Temos como os principais o next e o external.</p>
+    <!--next = indica que o link é para a próxima parte do documento atual.
+        prev = indica que o link é para a parte anterior do documento.
+        author = indica que é um link paa o site do autor do artigo atual.
+        external = indica que é um link para outro site que não faz parte do site atual.
+        nofollow = indica que é um link para um site não endossado, como um link pago.-->
+<a href="pagina2.html">Clique aqui par ir na segunda página.</a>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa</title>
+    <style>
+        h1 {/* box-level */
+
+            /* display: inline-block; pode mudar altura (height) e largura (wigth) */
+
+            /* display: inline; Transfoma o box-level em inline-level mas não pode mudar altura (height) e largura (wigth) */
+
+            background-color: lightgrey;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkgoldenrod;
+            
+            /** Vamos SIMPLIFICAR USANDO SHORTHAND
+
+            border: 10px solid darkgoldenrod; **/
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /*
+            padding: 10px 10px 10px 10px;
+
+            Se os 4 valores forem iguais basta declarar somente uma vex. Como no exemplo  abaixo.
+
+            padding: 10px
+
+            Se colocar dois valores o de cima e o debaixo fica iguais e o da esquerda e da direita também ficam iguais.
+
+            padding: 10px 20px;
+            */
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 40px;
+            margin-left: 10px;
+
+            /*
+            margin: 10px 10px 40px 10px;
+
+            Se colocar o exemplo abaixo, automaticamente o box ficará centralizado.
+            
+            margin: 20px auto 40px auto;
+
+            */
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: blue;
+
+            /*
+            outline: 5px dashed blue;
+            */
+        }
+
+        a { /* inline-level */
+            display: block; /* Transforma em um blox-level */
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            /*
+            boder: 10px solid red
+            */
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /*
+            padding: 10px
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>arágrafos também são exemplos de bos-level, mas os <a href="#">links são exemplos de caixas inline-level</a>.</p> Vamos ver como tudo isso funciona.
+</body>
+</html>

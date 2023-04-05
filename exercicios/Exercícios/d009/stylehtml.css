@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+
+}
+.voltar{
+    padding-top: 15px;
+}
+.veja{
+    padding-top: 10px;
+    font-size: 18px;
+}
